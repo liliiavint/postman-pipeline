@@ -5,11 +5,12 @@
   "main": "index.js",
   "scripts": {
     "test": "newman run Swagger-Petstore.postman_test_run.json",
-    "test:report": "newman run Swagger-Petstore.postman_test_run.json -r htmlextra"
+    "start": "newman run Swagger-Petstore.postman_collection.json -r htmlextra, json --reporter-htmlextra-export testResults/htmlreport.html"
   },
   "author": "Lilia (https://github.com/liliiavint)",
   "license": "ISC",
-  "dependencies": {
-    "reporter": "^0.1.0"
+  "devDependencies": {
+    "newman": "^6.1.2",
+    "newman-reporter-htmlextra": "^1.23.1"
   }
 }
