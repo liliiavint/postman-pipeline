@@ -4,8 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "newman run Swagger-Petstore.postman_test_run.json",
+    "test:report": "newman run Swagger-Petstore.postman_test_run.json -r htmlextra"
   },
   "author": "Lilia (https://github.com/liliiavint)",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "reporter": "^0.1.0"
+  }
 }
