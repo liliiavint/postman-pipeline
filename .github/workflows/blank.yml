@@ -1,4 +1,4 @@
-name: Test-Build
+name: pipeline-Swagger-example
 on:
   push:
     branches:
